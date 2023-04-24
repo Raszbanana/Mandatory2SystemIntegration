@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1>Signup</h1>
+    <!-- <form action="/signup" method="post">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password">
+      <br>
+      <input type="submit" value="Submit">
+    </form> -->
+    <div id="g_id_onload"
+     data-client_id="980863437901-mpfcqqnbo30g1r0j2rcmtep5ov429vkf.apps.googleusercontent.com"
+     data-context="signup"
+     data-callback="handleSignUp"
+     data-itp_support="true">
+</div>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script type="text/javascript">
+  function handleSignUp(googleUser) {
+          console.log("Succesfully signed up!!!", googleUser);
+          alert('Succesfully Logged in!!!');
+  }
+</script>
+  </body>
+</html>

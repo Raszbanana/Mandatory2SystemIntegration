@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1>Login</h1>
+    <!-- <form action="/login" method="post">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username">
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password">
+      <br>
+      <input type="submit" value="Submit">
+    </form> -->
+    <div id="g_id_onload"
+     data-client_id="980863437901-mpfcqqnbo30g1r0j2rcmtep5ov429vkf.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-callback="handleCredentialResponse"
+     data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="rectangular"
+     data-theme="outline"
+     data-text="signin_with"
+     data-size="large"
+     data-logo_alignment="left">
+</div>
+<script src="https://accounts.google.com/gsi/client" async defer>
+</script>
+<script type="text/javascript">
+  function handleCredentialResponse(googleUser) {
+          console.log("Succesfully Logged in!!!", googleUser);
+          alert('Succesfully Logged in!!!');
+  }
+</script>
+
+  </body>
+</html>
